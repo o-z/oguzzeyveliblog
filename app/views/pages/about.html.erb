@@ -1,0 +1,19 @@
+<div id="page_wrapper">
+	<div id="profile_image">
+		<%= image_tag "profile.jpg" %>
+	</div>
+
+	<div id="content">
+		<h1>Merhaba</h1>
+		<p>Adım Oğuzhan Zeyveli</p>
+		<p>Bir yazılım geliştiricisiyim.</p>
+		
+	</div>
+	<div id="content">
+		<br><br><br>
+			<% request.env.each do |key, value| %>
+			 <strong><%= key %></strong> => <%= value %><br/>
+			<% end %>
+		</br>
+	</div>
+</div>
